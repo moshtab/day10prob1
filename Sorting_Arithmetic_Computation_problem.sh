@@ -11,7 +11,7 @@ for ((i=0;i<5;i++))
 do
     for((j=$i;j<5;j++))
     do
-       if [ ${compute[$i]} -lt ${compute[$j]} ]
+       if [ ${compute[$i]} -gt ${compute[$j]} ]
        then
           temp=${compute[i]}
           compute[$i]=${compute[$j]}
@@ -19,6 +19,6 @@ do
        fi
     done
 done
-echo "descending order is " ${compute[@]}
+echo "ascending order is " ${compute[@]}
 
 
