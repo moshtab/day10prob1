@@ -1,6 +1,6 @@
 a=1
 b=2
 c=3
-compute=$((c+a/b))
+compute=$((a%b+c))
 echo "solution is " $compute
 
